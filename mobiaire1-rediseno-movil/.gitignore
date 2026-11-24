@@ -1,0 +1,30 @@
+# Android build artifacts and caches (CRITICAL: prevents "Filename too long" errors)
+**/build/
+**/.gradle/
+**/.idea/
+**/local.properties
+*.iml
+*.hprof
+*.idsig
+
+# Python bytecode and caches
+**/__pycache__/
+*.py[cod]
+*$py.class
+**/.pytest_cache/
+**/.venv/
+venv/
+ENV/
+env/
+.env
+
+# Temporary and log files
+*.tmp
+*.log
+*.lock
+ingesta/*.log*
+ingesta/cache_waqi.tmp
+
+# Secrets
+*serviceAccount*.json
+firebase-key*.json

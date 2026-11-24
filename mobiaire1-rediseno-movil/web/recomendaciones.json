@@ -1,0 +1,216 @@
+{
+  "_nota": "Textos revisables por el Product Owner. Son orientativos, NO indicaciones médicas. Un solo archivo para editar sin tocar código.",
+  "niveles": {
+    "verde": {
+      "titulo": "Aire aceptable (Tranquilo)",
+      "recomendacion": "Aire limpio real para el binomio madre-feto. Sin riesgo de inflamación bronquial ni paso significativo de partículas finas a placenta. Se pueden realizar caminatas y actividades al aire libre con normalidad."
+    },
+    "naranja": {
+      "titulo": "Precaución (Sensibilidad materna)",
+      "recomendacion": "Zona de sensibilidad materna: ya hay carga suficiente de PM2.5 para detonar síntomas en gestantes con asma o rinitis. Evita ejercicio intenso o caminatas largas cerca de vías con tráfico pesado, ventila solo fuera de horas pico y ten medicación de rescate disponible."
+    },
+    "rojo": {
+      "titulo": "Peligro (Riesgo alto)",
+      "recomendacion": "Riesgo alto para toda mujer gestante (con o sin asma previa). Elevada probabilidad de broncoespasmo e inflamación sistémica. Permanece en interiores con ventanas cerradas, suspende actividad física al aire libre y usa mascarilla N95 o KN95 ajustada si es obligatorio salir."
+    },
+    "gris": {
+      "titulo": "Sin dato reciente",
+      "recomendacion": "Sin dato reciente, no podemos orientarte ahora. Vuelve a intentarlo más tarde."
+    }
+  },
+  "guia": [
+    { "nivel": "verde",   "rango": "Sub-índice 0–35 (Verde bajo)",   "que_significa": "Aire limpio real para el binomio madre-feto. Sin riesgo de inflamación bronquial ni paso significativo de partículas finas a placenta.", "que_hacer": "Se pueden realizar caminatas y actividades al aire libre con normalidad." },
+    { "nivel": "naranja", "rango": "PM2.5/PM10 36–85 · O₃/NO₂ 36–75", "que_significa": "Zona de sensibilidad materna (Verde alto 36–50 y Amarillo/Moderado 51–85). Carga suficiente para detonar síntomas en gestantes con asma, rinitis o hiperreactividad bronquial.", "que_hacer": "Evitar ejercicio intenso o caminatas largas cerca de tráfico pesado, ventilar fuera de horas pico y tener medicación de rescate disponible." },
+    { "nivel": "rojo",    "rango": "PM2.5/PM10 ≥ 86 · O₃/NO₂ ≥ 76", "que_significa": "Riesgo alto para toda mujer gestante (Amarillo alto 86–100, Naranja 101–150 y Rojo+ 151+). Elevada probabilidad de broncoespasmo y afectación placentaria.", "que_hacer": "Permanecer en interiores con ventanas cerradas, suspender actividad física al aire libre y usar mascarilla N95 o KN95 ajustada si es obligatorio salir." },
+    { "nivel": "gris",    "rango": "—",            "que_significa": "No hay una medición reciente (menos de 6 horas).", "que_hacer": "No tomes decisiones con datos viejos; vuelve a consultar más tarde." }
+  ],
+  "manual": [
+    {
+      "icono": "1",
+      "titulo": "Entrar o explorar sin cuenta",
+      "texto": "Al abrir la app verás la pantalla de acceso. Puedes crear una cuenta para guardar tu perfil, o pulsar \"Explorar app\" para ver el mapa y la información sin registrarte."
+    },
+    {
+      "icono": "2",
+      "titulo": "Elegir tu zona",
+      "texto": "Pulsa el pin de la cabecera o \"Buscar otra zona\". Elige tu UPZ de Ciudad Bolívar o usa \"Usar mi ubicación\" para que la app sugiera la zona más cercana."
+    },
+    {
+      "icono": "3",
+      "titulo": "Completar tu perfil",
+      "texto": "En el botón de perfil (arriba a la derecha) registra tus datos:",
+      "lista": [
+        "Nombre o pseudónimo y edad.",
+        "FUM (última menstruación) o FPP (fecha probable de parto) para saber tus semanas.",
+        "Condiciones de salud (asma, hipertensión, diabetes).",
+        "Contacto de emergencia: nombre y teléfono, para no buscarlo durante una urgencia."
+      ]
+    },
+    {
+      "icono": "4",
+      "titulo": "Leer el semáforo",
+      "texto": "La tarjeta de Inicio muestra el color de tu zona: verde (aceptable), naranja (precaución) o rojo (dañino). Gris significa que no hay dato reciente."
+    },
+    {
+      "icono": "5",
+      "titulo": "Pedir ayuda",
+      "texto": "El botón rojo SOS abre las opciones de emergencia: centros de salud cercanos, avisar a tu contacto y llamar al 123."
+    }
+  ],
+  "semanas": [
+    {
+      "id": "s1",
+      "rango": "Semanas 1–4",
+      "titulo": "Preimplantación",
+      "resumen": "Periodo muy temprano, antes de la implantación del embrión.",
+      "riesgos": [
+        "Con PM2.5 por encima de 25 µg/m³ aumenta el riesgo de fallo de implantación.",
+        "Los picos de SO₂ se asocian a aborto temprano."
+      ],
+      "pm": "PM2.5 y SO₂ son los más relacionados con riesgos en esta etapa.",
+      "recomendaciones": [
+        "Evita zonas de alto tráfico y obras.",
+        "Mantén las ventanas cerradas en horas pico."
+      ]
+    },
+    {
+      "id": "s2",
+      "rango": "Semanas 5–12",
+      "titulo": "Organogénesis (periodo más crítico)",
+      "resumen": "Se forman los órganos del bebé; es la etapa de mayor sensibilidad.",
+      "riesgos": [
+        "PM2.5 e hidrocarburos pueden atravesar la placenta.",
+        "Mayor riesgo de malformaciones cardíacas y del tubo neural."
+      ],
+      "pm": "PM2.5 es el contaminante más crítico; también importan NO₂ y O₃.",
+      "recomendaciones": [
+        "Reduce al máximo la exposición al aire libre.",
+        "Usa tapabocas si debes salir.",
+        "Consulta a tu profesional ante cualquier síntoma."
+      ]
+    },
+    {
+      "id": "s3",
+      "rango": "Semanas 13–27",
+      "titulo": "Segundo trimestre",
+      "resumen": "El bebé crece y aumenta la demanda de oxígeno de la placenta.",
+      "riesgos": [
+        "PM10 y PM2.5 elevan la inflamación general.",
+        "Superar 20–25 µg/m³ de PM2.5 o 40 µg/m³ de PM10 sube hasta ~30% el riesgo de diabetes gestacional y preeclampsia."
+      ],
+      "pm": "PM2.5 y PM10 son los de mayor impacto; vigila también O₃ en días soleados.",
+      "recomendaciones": [
+        "Evita ejercicio intenso cuando el aire esté naranja o rojo.",
+        "Monitorea tu presión arterial si tienes antecedentes.",
+        "Hidrátate bien."
+      ]
+    },
+    {
+      "id": "s4",
+      "rango": "Semanas 28–40",
+      "titulo": "Tercer trimestre",
+      "resumen": "Etapa final del embarazo, previa al parto.",
+      "riesgos": [
+        "PM2.5 por encima de 15–20 µg/m³ puede desencadenar parto prematuro.",
+        "Mayor riesgo de bajo peso al nacer (menos de 2500 g)."
+      ],
+      "pm": "PM2.5 es el principal; el CO también afecta el transporte de oxígeno.",
+      "recomendaciones": [
+        "Permanece en interiores los días rojos.",
+        "Ten lista tu ruta a la clínica y tu contacto de emergencia.",
+        "Consulta de inmediato si sientes contracciones o falta de aire."
+      ]
+    }
+  ],
+  "glosario": [
+    {
+      "id": "pm25",
+      "termino": "PM2.5",
+      "resumen": "Partículas finas de menos de 2.5 micrómetros.",
+      "definicion": "Partículas muy pequeñas que penetran hasta los alvéolos y pueden pasar a la sangre y a la placenta.",
+      "causas": ["Combustión de vehículos diésel y gasolina.", "Industria y obras.", "Quema de biomasa y basuras."],
+      "prevencion": ["Usa tapabocas de alta filtración.", "Cierra ventanas en horas pico.", "Evita zonas de tráfico denso."],
+      "embarazo": "Es el contaminante más ligado a bajo peso al nacer, parto prematuro y preeclampsia."
+    },
+    {
+      "id": "pm10",
+      "termino": "PM10",
+      "resumen": "Partículas inhalables de menos de 10 micrómetros.",
+      "definicion": "Polvo y partículas que se depositan en las vías respiratorias altas y los bronquios.",
+      "causas": ["Polvo de vías sin pavimentar.", "Obras de construcción.", "Resuspensión por el viento y el tráfico."],
+      "prevencion": ["Mantén limpias las superficies de tu casa.", "Cierra ventanas los días secos y ventosos.", "Evita caminar junto a obras."],
+      "embarazo": "Se asocia a inflamación, diabetes gestacional y mayor riesgo de preeclampsia."
+    },
+    {
+      "id": "ica",
+      "termino": "ICA",
+      "resumen": "Índice de Calidad del Aire.",
+      "definicion": "Número que resume la calidad del aire según la Resolución 2254 de 2017 (Colombia). La app usa los colores verde, naranja y rojo.",
+      "causas": [],
+      "prevencion": [],
+      "embarazo": "Cuanto más alto el ICA, mayor el riesgo para tu embarazo."
+    },
+    {
+      "id": "o3",
+      "termino": "Ozono (O₃)",
+      "resumen": "Gas que se forma con el sol.",
+      "definicion": "Contaminante secundario que se forma cuando el sol reacciona con gases de vehículos e industria.",
+      "causas": ["Tráfico vehicular.", "Reacciones con la luz solar en días calurosos."],
+      "prevencion": ["Evita estar al aire libre entre las 11 a.m. y 4 p.m. los días soleados.", "Prefiere las horas de la mañana o el atardecer."],
+      "embarazo": "Irrita las vías respiratorias y puede reducir la función pulmonar."
+    },
+    {
+      "id": "no2",
+      "termino": "NO₂ (dióxido de nitrógeno)",
+      "resumen": "Gas de la combustión vehicular.",
+      "definicion": "Gas rojizo con olor penetrante que proviene sobre todo de motores y tráfico pesado.",
+      "causas": ["Vehículos diésel y gasolina.", "Plantas de energía y calderas."],
+      "prevencion": ["Evita avenidas con tráfico pesado.", "No hagas ejercicio junto a vías principales."],
+      "embarazo": "Se relaciona con asma y mayor riesgo de bajo peso al nacer."
+    },
+    {
+      "id": "so2",
+      "termino": "SO₂ (dióxido de azufre)",
+      "resumen": "Gas de procesos industriales.",
+      "definicion": "Gas incoloro con olor fuerte que proviene de la quema de combustibles con azufre.",
+      "causas": ["Industria y fundiciones.", "Combustibles fósiles con azufre."],
+      "prevencion": ["Aléjate de zonas industriales los días de viento.", "Cierra ventanas en picos de emisión."],
+      "embarazo": "Puede agravar el asma y se asocia a complicaciones del embarazo."
+    },
+    {
+      "id": "co",
+      "termino": "CO (monóxido de carbono)",
+      "resumen": "Gas de la combustión incompleta.",
+      "definicion": "Gas sin color ni olor que reduce el oxígeno que llega a la sangre.",
+      "causas": ["Motores de vehículos.", "Combustión incompleta en estufas y calderas."],
+      "prevencion": ["No permanezcas cerca de tubos de escape.", "Ventila si cocinas con gas."],
+      "embarazo": "Disminuye el oxígeno disponible para el bebé."
+    },
+    {
+      "id": "estacion",
+      "termino": "Estación de monitoreo",
+      "resumen": "Punto de medición de la red de aire.",
+      "definicion": "Lugar donde la Red de Monitoreo de Calidad del Aire de Bogotá (RMCAB) mide los contaminantes.",
+      "causas": [],
+      "prevencion": [],
+      "embarazo": "La estación más cercana estima el aire que respiras."
+    },
+    {
+      "id": "upz",
+      "termino": "UPZ",
+      "resumen": "Unidad de Planeamiento Zonal.",
+      "definicion": "División administrativa de Bogotá que agrupa varios barrios; la app usa las UPZ de Ciudad Bolívar.",
+      "causas": [],
+      "prevencion": [],
+      "embarazo": "Te ayuda a elegir tu zona en el mapa."
+    }
+  ],
+  "contaminantes": [
+    { "clave": "pm25", "nombre": "PM2.5", "unidad": "µg/m³", "que_es": "Partículas finas menores de 2.5 µm que llegan a los alvéolos y a la placenta.", "fuentes": "Vehículos, industria, obras y quema de biomasa.", "efecto": "Bajo peso al nacer, parto prematuro y preeclampsia.", "limite": "Guía OMS 24 h: 15 µg/m³ · Colombia: 25 µg/m³" },
+    { "clave": "pm10", "nombre": "PM10", "unidad": "µg/m³", "que_es": "Partículas inhalables menores de 10 µm.", "fuentes": "Polvo de vías, obras y resuspensión por viento.", "efecto": "Inflamación y riesgo de diabetes gestacional.", "limite": "Guía OMS 24 h: 45 µg/m³ · Colombia: 50 µg/m³" },
+    { "clave": "no2", "nombre": "NO₂", "unidad": "ppb", "que_es": "Dióxido de nitrógeno de la combustión vehicular.", "fuentes": "Vehículos diésel y gasolina, industria.", "efecto": "Asma y menor peso al nacer.", "limite": "Guía OMS 24 h: 25 µg/m³" },
+    { "clave": "so2", "nombre": "SO₂", "unidad": "ppb", "que_es": "Dióxido de azufre de procesos industriales.", "fuentes": "Industria y combustibles con azufre.", "efecto": "Agrava el asma y complica el embarazo.", "limite": "Guía OMS 24 h: 40 µg/m³" },
+    { "clave": "o3", "nombre": "O₃", "unidad": "ppb", "que_es": "Ozono formado por reacciones con la luz solar.", "fuentes": "Tráfico e industria en días soleados.", "efecto": "Irrita las vías respiratorias.", "limite": "Guía OMS 8 h: 100 µg/m³" },
+    { "clave": "co", "nombre": "CO", "unidad": "ppm", "que_es": "Monóxido de carbono de combustión incompleta.", "fuentes": "Motores y combustión en estufas.", "efecto": "Reduce el oxígeno en la sangre.", "limite": "Guía OMS 24 h: 4 mg/m³" }
+  ]
+}
