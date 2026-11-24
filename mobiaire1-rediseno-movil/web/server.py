@@ -22,6 +22,7 @@ Privacidad: nunca sirve .env ni claves. El token de WAQI jamás sale del backend
 """
 import argparse
 import json
+import os
 import re
 import sys
 import threading
